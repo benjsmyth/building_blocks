@@ -1,10 +1,10 @@
 def stock_picker(stocks)
 	pairs = {}
 
-	stocks.each do |base|
-		stocks.each do |value|
-			next if stocks.index(value) < stocks.index(base)
-			pairs[[stocks.index(base), stocks.index(value)]] = value - base
+	stocks.each do |buy|
+		stocks.each do |sell|
+			next if stocks.index(sell) < stocks.index(buy)
+			pairs[[stocks.index(buy), stocks.index(sell)]] = sell - buy
 		end
 	end
 	

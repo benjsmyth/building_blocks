@@ -7,5 +7,5 @@ def caesar(phrase, shift)
 		if l !=~ /[A-Za-z]/ then l end
 	end
 	
-	puts letters.join
+	puts  letters.join
 end 
